@@ -5,10 +5,9 @@ using ll = long long;
 
 void
 dijkstra_sssp(
-	// Complexity : O((|E| + |V|)log(|V|))
-
 	vector<vector<pair<ll, double>>>& adj,
 	ll s, vector<double>& dist) {
+	// Complexity : O((|E| + |V|)log(|V|))
 
 	vector<bool> vis(dist.size(), false);
 	for (auto& d: dist)
