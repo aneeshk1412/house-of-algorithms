@@ -17,19 +17,19 @@ dijkstra_sssp(
 
 	priority_queue<pair<double, ll>,
 	vector<pair<double, ll>>,
-	greater<pair<double, ll>>> q;
+	greater<pair<double, ll>>> Q;
 
-	q.emplace(dist[s], s);
+	Q.emplace(dist[s], s);
 
-	while (!q.empty()) {
-		ll u=q.top().second; q.pop();
+	while (!Q.empty()) {
+		ll u=Q.top().second; Q.pop();
 		if (vis[u]) continue;
 		vis[u]=true;
 
 		for (auto& [v, w]: adj[u]) {
 			if (dist[u] + w < dist[v]) {
 				dist[v] = dist[u] + w;
-				q.emplace(dist[v], v);
+				Q.emplace(dist[v], v);
 			}
 		}
 	}
