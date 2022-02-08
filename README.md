@@ -2,12 +2,10 @@
 
 ## Introduction
 
-The initial aim of this repository is to collect various algorithms that I come across, and create templates for them.
-The main target would be for the code to be simple to understand, and as concise as possible.
-Over that, I try to explore algorithms with as optimal complexity as possible, but also include those which have lower constant factors, which would be better for practical scenarios.
+The initial aim of this repository is to collect various data structures, algorithms, neat tricks in a single repository.
+These (pretty vague) virtues will be kept in mind as I build this:
 
-## cp-algorithms
-
-This folder contains implementations of said algorithms from a competitive coding perspective.
-The goal is to make code shorter and quicker to implement in C++ with use of templates, typedefs and defines.
-(*hampers readability I agree, but one must learn to read unreadable codes*)
+* Make this repository as a library or package that can be imported and used as public faced APIs (e.g. in Competitive Programming Contests).
+* Employ as much of clean code practices, and keep the code simple to understand and concise.
+* The previous rule should make it such that it is easily revisable for Interview Purposes.
+* Differentiate between practical implementations and implementations with lower complexities but inefficient implementations in practice.
